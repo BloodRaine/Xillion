@@ -1,15 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iZh-oh-JRd">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="lpx-dO-XsQ">
+            <objects>
+                <viewController id="iZh-oh-JRd" customClass="MainMenuViewController" customModule="Xillion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gax-49-vre"/>
+                        <viewControllerLayoutGuide type="bottom" id="dsp-6b-3ux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3AJ-XF-mbn">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Work_in_Progress_Header" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-xA-wEZ">
+                                <rect key="frame" x="20" y="24" width="627" height="327"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vzw-mv-fxv">
+                                <rect key="frame" x="210" y="40" width="247" height="294"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANq-G6-y9p">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="88"/>
+                                        <state key="normal" title="Play Game" backgroundImage="hqdefault-2"/>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" id="rcn-Mf-Mez"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="der-0k-Al0">
+                                        <rect key="frame" x="0.0" y="103" width="247" height="88"/>
+                                        <state key="normal" title="Button" backgroundImage="hqdefault-2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58L-BY-5AZ">
+                                        <rect key="frame" x="0.0" y="206" width="247" height="88"/>
+                                        <state key="normal" title="Button" backgroundImage="hqdefault-2"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vzw-mv-fxv" firstAttribute="centerX" secondItem="3AJ-XF-mbn" secondAttribute="centerX" id="WX4-Aq-zgq"/>
+                            <constraint firstItem="Jke-xA-wEZ" firstAttribute="centerY" secondItem="3AJ-XF-mbn" secondAttribute="centerY" id="aE7-ui-qjf"/>
+                            <constraint firstItem="vzw-mv-fxv" firstAttribute="centerY" secondItem="3AJ-XF-mbn" secondAttribute="centerY" id="dRW-kH-EP6"/>
+                            <constraint firstItem="Jke-xA-wEZ" firstAttribute="centerX" secondItem="3AJ-XF-mbn" secondAttribute="centerX" id="oVE-NV-mXZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inProgressImage" destination="Jke-xA-wEZ" id="C4N-LP-XeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x91-15-50b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2820.5397301349326" y="-471.19999999999999"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Xillion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
@@ -19,68 +74,184 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mps-eN-NUD">
-                                <state key="normal" title="Play Game"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-eb-hiM">
+                                <rect key="frame" x="468" y="20" width="179" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX1-x7-ETV">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="Inventory"/>
+                                        <connections>
+                                            <segue destination="KGt-ga-ViJ" kind="presentation" id="hXL-XZ-K0P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-xW-VYd">
+                                        <rect key="frame" x="87" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Map"/>
+                                        <connections>
+                                            <segue destination="uhM-bR-GQv" kind="presentation" id="0Ec-go-Rbm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEE-nD-O3M">
+                                        <rect key="frame" x="140" y="0.0" width="39" height="30"/>
+                                        <state key="normal" title="Menu"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14559473167539272" green="0.14559473167539272" blue="0.14559473167539272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Mps-eN-NUD" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="A42-2q-Pyn"/>
-                            <constraint firstItem="Mps-eN-NUD" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="TjH-SB-uOq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QGC-eb-hiM" secondAttribute="trailing" id="emP-hW-fwV"/>
+                            <constraint firstItem="QGC-eb-hiM" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="sMT-gQ-K22"/>
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1932" y="-470"/>
+            <point key="canvasLocation" x="-1531" y="-471"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="11H-Lk-UPA">
+        <!--View Controller-->
+        <scene sceneID="49q-Nr-KdB">
             <objects>
-                <viewController id="0dX-c8-uNh" sceneMemberID="viewController">
+                <viewController id="KGt-ga-ViJ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NLO-d9-ia5"/>
-                        <viewControllerLayoutGuide type="bottom" id="evp-qB-7lT"/>
+                        <viewControllerLayoutGuide type="top" id="9Rg-cl-gtW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Om9-8d-d2r"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="76J-Df-cBL">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vEF-lL-D7m"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ot9-g9-EXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-253" y="-143"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="tWI-dj-m9D">
-            <objects>
-                <viewController id="juA-hB-XQ4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bFg-EK-9eK"/>
-                        <viewControllerLayoutGuide type="bottom" id="yEL-44-E9G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6vF-Le-Wqd">
+                    <view key="view" contentMode="scaleToFill" id="yWs-Ol-wmJ">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ith-oN-dan">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-WG-neq">
+                                <rect key="frame" x="486" y="20" width="161" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bun-ya-9ld">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Return"/>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" id="gHr-Da-86k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTQ-qp-wtf">
+                                        <rect key="frame" x="69" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Map"/>
+                                        <connections>
+                                            <segue destination="uhM-bR-GQv" kind="presentation" id="8bu-qm-7Pd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fl-u1-Vv0">
+                                        <rect key="frame" x="122" y="0.0" width="39" height="30"/>
+                                        <state key="normal" title="Menu"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35002863219895286" green="0.35002863219895286" blue="0.35002863219895286" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-Fu-J5b">
+                                <rect key="frame" x="20" y="51" width="627" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26730202879581155" green="0.26730202879581155" blue="0.26730202879581155" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DxS-CK-FKf">
+                                    <size key="itemSize" width="86" height="101"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dgk-jC-0rh">
+                                    <rect key="frame" x="0.0" y="0.0" width="954" height="304"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <string key="text">This is a stack view currently with nothing within it. Down the road, there will be image icons for various items in the inventory</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qyb-2C-Ri1">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="86" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Work_in_Progress_Header" translatesAutoresizingMaskIntoConstraints="NO" id="QWi-EY-I6A">
+                                                    <rect key="frame" x="8" y="30" width="70" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12029613874345546" green="0.12029613874345546" blue="0.12029613874345546" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ith-oN-dan" firstAttribute="centerX" secondItem="6vF-Le-Wqd" secondAttribute="centerX" id="bGB-C8-eWe"/>
-                            <constraint firstItem="ith-oN-dan" firstAttribute="centerY" secondItem="6vF-Le-Wqd" secondAttribute="centerY" id="rmD-V6-cdz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xaL-WG-neq" secondAttribute="trailing" id="FHL-EP-Tif"/>
+                            <constraint firstItem="xaL-WG-neq" firstAttribute="top" secondItem="9Rg-cl-gtW" secondAttribute="bottom" id="HaF-e8-qNE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="b91-2N-ehn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JsN-Ky-AsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CA7-sW-zGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-253" y="-799"/>
+            <point key="canvasLocation" x="-2167.4662668665669" y="-1180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SOG-SI-SS3">
+            <objects>
+                <viewController id="uhM-bR-GQv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ygV-Ci-00E"/>
+                        <viewControllerLayoutGuide type="bottom" id="GQJ-y8-ugz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B7i-Xy-vbm">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="XillionMap" translatesAutoresizingMaskIntoConstraints="NO" id="sGS-BT-KvA">
+                                <rect key="frame" x="46" y="20" width="572" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-7D-DK2">
+                                <rect key="frame" x="452" y="20" width="195" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rj-TP-lQT">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Return"/>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" id="Thc-hg-p0f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYg-fT-apK">
+                                        <rect key="frame" x="69" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="Inventory"/>
+                                        <connections>
+                                            <segue destination="KGt-ga-ViJ" kind="presentation" id="Iel-T5-y5b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4n-Ls-Zcz">
+                                        <rect key="frame" x="156" y="0.0" width="39" height="30"/>
+                                        <state key="normal" title="Menu"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13313972513089001" green="0.13313972513089001" blue="0.13313972513089001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iEi-7D-DK2" firstAttribute="top" secondItem="ygV-Ci-00E" secondAttribute="bottom" id="Gow-xE-U4P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iEi-7D-DK2" secondAttribute="trailing" id="Qd1-JS-xBB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAt-ak-qiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2167" y="209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Work_in_Progress_Header" width="600" height="324"/>
+        <image name="XillionMap" width="1024" height="768"/>
+        <image name="hqdefault-2" width="247" height="88"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8bu-qm-7Pd"/>
+        <segue reference="Iel-T5-y5b"/>
+        <segue reference="gHr-Da-86k"/>
+    </inferredMetricsTieBreakers>
 </document>
