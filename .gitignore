@@ -67,3 +67,4 @@ fastlane/test_output
 *.mov
 *.png
 *.jpg
+*.MP3
