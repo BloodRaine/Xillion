@@ -11,3 +11,9 @@ import Foundation
 class Lantern:Item {
     
 }
+
+class OldKey:Item {
+    override func use() {
+        // if near the old door, unlocks it
+    }
+}

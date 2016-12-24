@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class Item {
     var name: String = ""
+    var image = UIImage(named:"test")
     
     func use() {
         // Function dictating how each item is used if if has a use.
+    }
+    
+    func setImage(imageName:String) {
+        image = UIImage(named:imageName)
     }
     
 }
