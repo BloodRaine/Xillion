@@ -109,6 +109,16 @@
 			name = SubClasses;
 			sourceTree = "<group>";
 		};
+		A842B1BD1E0EF53D00E8FA5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8558E2B1DBFB7D9003721A1 /* GameViewController.swift */,
+				A8E42A361DF5680D0045BA6D /* mapViewController.swift */,
+				A895208C1DE2E97A00C9BE1A /* MainMenuViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		A8558E161DBFB7D9003721A1 = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +151,11 @@
 			children = (
 				A842B1BA1E0EF40600E8FA5E /* Media */,
 				A8558E291DBFB7D9003721A1 /* AppDelegate.swift */,
-				A8558E2B1DBFB7D9003721A1 /* GameViewController.swift */,
+				A842B1BD1E0EF53D00E8FA5E /* Controllers */,
 				A88041331DF507C900FCE5EC /* gameClass.swift */,
 				A842B1B91E0EF3CB00E8FA5E /* SuperClasses */,
 				A842B1BC1E0EF43500E8FA5E /* SubClasses */,
 				A842B1BB1E0EF41D00E8FA5E /* Storyboards */,
-				A8E42A361DF5680D0045BA6D /* mapViewController.swift */,
-				A895208C1DE2E97A00C9BE1A /* MainMenuViewController.swift */,
 				A8558E321DBFB7D9003721A1 /* Assets.xcassets */,
 				A8558E371DBFB7D9003721A1 /* Info.plist */,
 				A842B1A71E0DF8BA00E8FA5E /* GameControl.swift */,
