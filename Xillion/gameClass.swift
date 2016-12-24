@@ -23,7 +23,7 @@ class Zork {                                               // Create Zork class
     var door: Bool = false                                 // If you have opened the door
     var nightstand: Bool = false;                          // If you have opened the door
     //var items = [String]()
-
+    
     
     func Introduction() -> String {                         // Intro function
         var str = "                                                Xillion Developed by Mobius\n"

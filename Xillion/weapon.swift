@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Weapon:Item {
+    
+    override func use() {
+        
+    }
+    
+    func throw_weapon() {
+        
+    }
+}

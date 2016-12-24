@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class Item {
+    var name: String = ""
+    
+    func use() {
+        // Function dictating how each item is used if if has a use.
+    }
+    
+}

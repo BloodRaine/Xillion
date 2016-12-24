@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A842B1A81E0DF8BA00E8FA5E /* GameControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842B1A71E0DF8BA00E8FA5E /* GameControl.swift */; };
+		A842B1AA1E0DFC4600E8FA5E /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842B1A91E0DFC4600E8FA5E /* Room.swift */; };
+		A842B1AC1E0E14DF00E8FA5E /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842B1AB1E0E14DF00E8FA5E /* item.swift */; };
+		A842B1AE1E0E22BF00E8FA5E /* weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842B1AD1E0E22BF00E8FA5E /* weapon.swift */; };
+		A842B1B01E0E298200E8FA5E /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842B1AF1E0E298200E8FA5E /* Monster.swift */; };
 		A8558E231DBFB7D9003721A1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8558E221DBFB7D9003721A1 /* Metal.framework */; };
 		A8558E251DBFB7D9003721A1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8558E241DBFB7D9003721A1 /* MetalKit.framework */; };
 		A8558E271DBFB7D9003721A1 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8558E261DBFB7D9003721A1 /* ModelIO.framework */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A842B1A71E0DF8BA00E8FA5E /* GameControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControl.swift; sourceTree = "<group>"; };
+		A842B1A91E0DFC4600E8FA5E /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		A842B1AB1E0E14DF00E8FA5E /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		A842B1AD1E0E22BF00E8FA5E /* weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weapon.swift; sourceTree = "<group>"; };
+		A842B1AF1E0E298200E8FA5E /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		A8558E1F1DBFB7D9003721A1 /* Xillion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xillion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8558E221DBFB7D9003721A1 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A8558E241DBFB7D9003721A1 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
@@ -89,12 +99,17 @@
 				A8558E291DBFB7D9003721A1 /* AppDelegate.swift */,
 				A8558E2B1DBFB7D9003721A1 /* GameViewController.swift */,
 				A88041331DF507C900FCE5EC /* gameClass.swift */,
+				A842B1A91E0DFC4600E8FA5E /* Room.swift */,
+				A842B1AB1E0E14DF00E8FA5E /* item.swift */,
+				A842B1AD1E0E22BF00E8FA5E /* weapon.swift */,
+				A842B1AF1E0E298200E8FA5E /* Monster.swift */,
 				A8558E2F1DBFB7D9003721A1 /* Main.storyboard */,
 				A8E42A361DF5680D0045BA6D /* mapViewController.swift */,
 				A895208C1DE2E97A00C9BE1A /* MainMenuViewController.swift */,
 				A8558E321DBFB7D9003721A1 /* Assets.xcassets */,
 				A8558E341DBFB7D9003721A1 /* LaunchScreen.storyboard */,
 				A8558E371DBFB7D9003721A1 /* Info.plist */,
+				A842B1A71E0DF8BA00E8FA5E /* GameControl.swift */,
 			);
 			path = Xillion;
 			sourceTree = "<group>";
@@ -174,9 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A842B1B01E0E298200E8FA5E /* Monster.swift in Sources */,
 				A895208D1DE2E97A00C9BE1A /* MainMenuViewController.swift in Sources */,
 				A8E42A371DF5680D0045BA6D /* mapViewController.swift in Sources */,
+				A842B1AA1E0DFC4600E8FA5E /* Room.swift in Sources */,
+				A842B1AE1E0E22BF00E8FA5E /* weapon.swift in Sources */,
 				A88041341DF507C900FCE5EC /* gameClass.swift in Sources */,
+				A842B1AC1E0E14DF00E8FA5E /* item.swift in Sources */,
+				A842B1A81E0DF8BA00E8FA5E /* GameControl.swift in Sources */,
 				A8558E2C1DBFB7D9003721A1 /* GameViewController.swift in Sources */,
 				A8558E2A1DBFB7D9003721A1 /* AppDelegate.swift in Sources */,
 			);
