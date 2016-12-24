@@ -1,5 +1,5 @@
 //
-//  Monster.swift
+//  Items.swift
 //  Xillion
 //
 //  Created by Robbie Merillat on 12/23/16.
@@ -8,12 +8,6 @@
 
 import Foundation
 
-class Monster {
-    var name:String = ""
-    var health:Int = 0
-    var damage:Int = 0
+class Lantern:Item {
     
-    func attack() {
-        
-    }
 }
