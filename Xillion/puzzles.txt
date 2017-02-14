@@ -1,0 +1,3 @@
+Below lies a list of fun puzzles that the game can implement.
+
+Secret door that you have to pull the right books
